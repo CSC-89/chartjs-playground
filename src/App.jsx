@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { Chart } from "chart.js/auto";
-import { Pie, Line } from "react-chartjs-2";
+import { Pie, Line, Doughnut } from "react-chartjs-2";
 import { Data } from "./Data";
 
 function App() {
@@ -26,7 +26,9 @@ function App() {
       <div id="pie-chart">
         <Pie data={data} />
       </div>
-
+      <div>
+        <Doughnut data={data} />
+      </div>
       <h2>Line Chart</h2>
       <div id="bar-chart">
       <Line data={data} />
